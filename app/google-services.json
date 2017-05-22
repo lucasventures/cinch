@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "49597694286",
+    "project_id": "cinch-acd51"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49597694286:android:af6aeac68e936e7b",
+        "android_client_info": {
+          "package_name": "com.virtualspaces.cinch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA67_gmrJvyectpeUYpITnNmQ4lIPVJVXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-84958405-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

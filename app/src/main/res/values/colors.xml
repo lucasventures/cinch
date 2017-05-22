@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#0059bf</color>
+    <color name="colorPrimary">#0077ff</color>
+    <color name="colorAccent">#ff6b3a</color>
+    <color name="brand_blue">#09d2ff</color>
+    <color name="brand_dark">#0979cf</color>
+    <color name="white">#ffffff</color>
+    <color name="back_grey">#cecece</color>
+
+    <color name="grad">#0077ff</color>
+
+    <color name="brand_charcoal">#313131</color>
+
+    <color name="progress_gray">#f5f5f5</color>
+
+    <color name="orange">#ff6b3a</color>
+    <color name="electric_orange">#a73f22</color>
+    <color name="soft_orange">#f55448</color>
+
+    <color name="pie_red">#fffe777e</color>
+    <color name="pie_blue">#ff85b9e8</color>
+    <color name="pie_gray">#ffb3b5b0</color>
+    <color name="pie_green">#53f1b6</color>
+
+    <color name="pie_red_select">#c1373e</color>
+    <color name="pie_blue_select">#2e6aa1</color>
+    <color name="pie_gray_select">#5c5c5c</color>
+    <color name="pie_green_select">#0b9f68</color>
+
+    <color name="transparent">#000b9f68</color>
+
+    <color name="nav_header">#366fff</color>
+    <color name="nav_list">#3c94ff</color>
+
+    <!-- these colors are for the launcher -->
+    <color name="intro_one">#6bf1bf</color>
+    <color name="intro_two">#53f1e9</color>
+    <color name="intro_three">#53e1f1</color>
+    <color name="intro_four">#79caff</color>
+    <color name="intro_five">#6d96ff</color>
+    <color name="intro_six">#4577f9</color>
+
+
+</resources>

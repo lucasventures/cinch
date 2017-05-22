@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.virtualspaces.cinch"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <meta-data android:name="DATABASE" android:value="cinch.db" />
+        <meta-data android:name="VERSION" android:value="4" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME"
+
+            android:value="com.virtualspaces.cinch.entities" />
+
+        <activity
+            android:name="com.virtualspaces.cinch.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.CalculateActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.SecurityActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.NotepadActivity"
+            android:theme="@style/AppWhite"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.virtualspaces.cinch.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.ReviseBudgetActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.virtualspaces.cinch.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.FinancialCalibrationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.TransactionListActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.virtualspaces.cinch.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.AddTransactionActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.virtualspaces.cinch.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.virtualspaces.cinch.SimpleStartActivity"
+            android:theme="@style/AppTheme.NoActionBar.Light"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity android:name="com.virtualspaces.cinch.SplashActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@drawable/intro_five">
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/next"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/card_liner"
+            android:padding="5dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:windowSoftInputMode="stateHidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:imeActionLabel="next"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="start" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_monthly"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="start">
+
+                <EditText
+                    android:id="@+id/monthly"
+                    android:windowSoftInputMode="stateHidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Income"
+                    android:imeActionLabel="next"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="start" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_exp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="start">
+
+                <EditText
+                    android:id="@+id/monthly_exp"
+                    android:windowSoftInputMode="stateHidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Expenses"
+                    android:imeActionLabel="next"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="start" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="start">
+
+                <EditText
+                    android:id="@+id/savings"
+                    android:windowSoftInputMode="stateHidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Savings Goal"
+                    android:imeActionLabel="next"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="start" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:textColor="@color/white"
+        android:background="@color/pie_green"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let&apos;s get to it, then."
+        android:id="@+id/lets"
+        android:textColor="@color/white"
+        android:layout_above="@+id/login_form"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

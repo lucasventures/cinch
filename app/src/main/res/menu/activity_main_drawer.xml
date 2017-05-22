@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        android:title="Home">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:checkable="true"
+                android:checked="true"
+                android:icon="@drawable/ic_menu_home"
+                android:title="Overview" />
+        </menu>
+    </item>
+
+    <item
+        android:checkable="true"
+        android:title="My Account">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_notepad"
+                    android:icon="@drawable/ic_menu_pencil"
+                    android:title="Add Note" />
+
+                <item
+                    android:id="@+id/nav_transactions"
+                    android:icon="@drawable/ic_menu_calculators"
+                    android:title="Recent Transactions" />
+
+                <item
+                    android:id="@+id/nav_budget"
+                    android:icon="@drawable/ic_menu_budget"
+                    android:title="Revise Budget" />
+
+                <item
+                    android:id="@+id/nav_search"
+                    android:icon="@drawable/ic_edit"
+                    android:title="Revise or Plan Ahead" />
+                <item
+                    android:id="@+id/nav_security"
+                    android:icon="@drawable/ic_menu_security"
+                    android:title="Change Pin" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="Rate in App Store" />
+
+            <item
+                android:id="@+id/legal"
+                android:icon="@drawable/ic_about"
+                android:title="Legal" />
+        </menu>
+    </item>
+
+</menu>
