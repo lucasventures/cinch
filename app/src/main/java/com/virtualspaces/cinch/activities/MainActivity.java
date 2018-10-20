@@ -1,13 +1,10 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -35,6 +32,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.orm.SugarContext;
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.adapters.MyPagerAdapter;
+import com.virtualspaces.cinch.viewhelpers.MainPageTransformer;
+import com.virtualspaces.cinch.viewhelpers.TypefaceSpan;
 
 import java.util.Calendar;
 import java.util.Map;

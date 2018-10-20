@@ -3,7 +3,7 @@ package com.virtualspaces.cinch;
 /**
  * Created by LUCASVENTURES on 6/6/2016.
  */
-class Constants {
+public class Constants {
 
     public static final String APP_NAME = "cinch";
 

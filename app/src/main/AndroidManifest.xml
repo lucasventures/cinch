@@ -24,66 +24,67 @@
             android:value="com.virtualspaces.cinch.entities" />
 
         <activity
-            android:name="com.virtualspaces.cinch.LoginActivity"
+            android:name="com.virtualspaces.cinch.activities.LoginActivity"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.MainActivity"
+            android:name="com.virtualspaces.cinch.activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.CalculateActivity"
+            android:name="com.virtualspaces.cinch.activities.CalculateActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.SecurityActivity"
+            android:name="com.virtualspaces.cinch.activities.SecurityActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize|adjustPan">
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.NotepadActivity"
+            android:name="com.virtualspaces.cinch.activities.NotepadActivity"
             android:theme="@style/AppWhite"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.MainActivity"/>
+                android:value="com.virtualspaces.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.ReviseBudgetActivity"
+            android:name="com.virtualspaces.cinch.activities.ReviseBudgetActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.MainActivity"/>
+                android:value="com.virtualspaces.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.FinancialCalibrationActivity"
+            android:name="com.virtualspaces.cinch.activities.FinancialCalibrationActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.TransactionListActivity"
+            android:name="com.virtualspaces.cinch.activities.TransactionListActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.MainActivity"/>
+                android:value="com.virtualspaces.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.AddTransactionActivity"
+            android:name="com.virtualspaces.cinch.activities.AddTransactionActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.MainActivity"/>
+                android:value="com.virtualspaces.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.SimpleStartActivity"
+            android:name="com.virtualspaces.cinch.activities.SimpleStartActivity"
             android:theme="@style/AppTheme.NoActionBar.Light"
             android:windowSoftInputMode="adjustResize">
         </activity>
 
-        <activity android:name="com.virtualspaces.cinch.SplashActivity"
+        <activity
+            android:name="com.virtualspaces.cinch.activities.SplashActivity"
                   android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>

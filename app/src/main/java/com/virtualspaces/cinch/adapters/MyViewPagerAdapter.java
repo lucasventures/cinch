@@ -1,16 +1,18 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.util.Log;
 
+import com.virtualspaces.cinch.fragments.FinanceEntryFragment;
+
 import java.util.ArrayList;
 
 /**
  * Created by LUCASVENTURES on 6/3/2016.
  */
-class MyViewPagerAdapter extends FragmentStatePagerAdapter {
+public class MyViewPagerAdapter extends FragmentStatePagerAdapter {
 
 
     private static final String TAG = "MyViewPager";

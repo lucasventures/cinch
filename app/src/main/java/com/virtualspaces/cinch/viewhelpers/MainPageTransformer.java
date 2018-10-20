@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.viewhelpers;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 /**
  * Created by LUCASVENTURES on 5/21/2016.
  */
-class MainPageTransformer implements ViewPager.PageTransformer {
+public class MainPageTransformer implements ViewPager.PageTransformer {
     private static final float MIN_SCALE = 0.85f;
     private static final float MIN_ALPHA = 0.5f;
 

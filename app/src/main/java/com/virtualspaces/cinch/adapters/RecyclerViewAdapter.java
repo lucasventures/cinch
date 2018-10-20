@@ -1,10 +1,9 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.adapters;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -29,11 +28,15 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.orm.SugarRecord;
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.activities.AddTransactionActivity;
+import com.virtualspaces.cinch.activities.NotepadActivity;
+import com.virtualspaces.cinch.activities.TransactionListActivity;
 import com.virtualspaces.cinch.entities.MyTransaction;
 import com.virtualspaces.cinch.entities.Note;
-import com.virtualspaces.cinch.entities.MyTransaction;
-
-import org.w3c.dom.Text;
+import com.virtualspaces.cinch.fragments.NotepadFragment;
+import com.virtualspaces.cinch.viewhelpers.PieChartHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +44,7 @@ import java.util.List;
 /**
  * Created by LUCASVENTURES on 5/22/2016.
  */
-class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final String TAG = "RecyclerAdapter";
     private int listType;
     private int[] summaryList = {3, 0, 1, 2, 4};
@@ -64,7 +67,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     private ArrayList<Double> orderedDataValues;
 
     //constructor for summary fragment
-    RecyclerViewAdapter(int num, Context context) {
+    public RecyclerViewAdapter(int num, Context context) {
         this.context = context;
         listType = num;
         //ptSans = Typeface.createFromAsset(context.getAssets(), "fonts/pt-sans.ttf");
@@ -72,7 +75,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     //constructor for transactions list
     //bool is just to avoid common erasure error in constructor
-    RecyclerViewAdapter(int num, Context context, ArrayList<MyTransaction> transactions, boolean bool) {
+    public RecyclerViewAdapter(int num, Context context, ArrayList<MyTransaction> transactions, boolean bool) {
         this.context = context;
         listType = num;
         transList = transactions;
@@ -80,7 +83,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     }
 
     //constructor for notes list
-    RecyclerViewAdapter(int num, Context context, ArrayList<Note> notes) {
+    public RecyclerViewAdapter(int num, Context context, ArrayList<Note> notes) {
         this.context = context;
         listType = num;
         this.notesList = notes;

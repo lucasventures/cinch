@@ -1,13 +1,13 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.Spannable;
@@ -26,7 +26,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orm.SugarRecord;
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
 import com.virtualspaces.cinch.entities.MyTransaction;
+import com.virtualspaces.cinch.viewhelpers.TypefaceSpan;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +81,6 @@ public class AddTransactionActivity extends AppCompatActivity implements View.On
             s.setSpan(new TypefaceSpan(this, "spartan.ttf"), 0, s.length(),
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-            //
             ActionBar actionBar = getSupportActionBar();
             View view = getLayoutInflater().inflate(R.layout.centered_title, null);
             TextView title = (TextView) view.findViewById(R.id.centered_title);

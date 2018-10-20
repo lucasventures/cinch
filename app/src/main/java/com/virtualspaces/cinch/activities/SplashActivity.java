@@ -1,17 +1,19 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
 
 public class SplashActivity extends AppCompatActivity {
 

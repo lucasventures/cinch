@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,6 +16,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
 
 public class SecurityActivity extends AppCompatActivity {
 

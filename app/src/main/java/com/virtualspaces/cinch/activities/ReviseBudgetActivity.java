@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,7 +14,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
+import com.virtualspaces.cinch.Constants;
+import com.virtualspaces.cinch.R;
 import com.virtualspaces.cinch.entities.MonthlyFinances;
+import com.virtualspaces.cinch.viewhelpers.PieChartHelper;
 
 import java.util.ArrayList;
 import java.util.List;

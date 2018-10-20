@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.fragments;
 
 
 import android.content.Intent;
@@ -21,6 +21,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.activities.NotepadActivity;
+import com.virtualspaces.cinch.adapters.RecyclerViewAdapter;
 import com.virtualspaces.cinch.entities.Note;
 
 import java.util.ArrayList;
@@ -36,7 +39,7 @@ import java.util.List;
 public class NotepadFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     private FloatingActionButton noteFab;
-    static RecyclerView mRecyclerView;
+    public static RecyclerView mRecyclerView;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private Button addNoteButton;
 
@@ -107,7 +110,7 @@ public class NotepadFragment extends Fragment implements SwipeRefreshLayout.OnRe
         return view;
     }
 
-    static void setUpRecycler(ArrayList<Note> notes, RecyclerView recyclerView) {
+    public static void setUpRecycler(ArrayList<Note> notes, RecyclerView recyclerView) {
         //setup recyclerview + adapter here
         Collections.reverse(notes);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(2, recyclerView.getContext(), notes);

@@ -1,15 +1,14 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
-import android.support.v4.app.Fragment;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
-import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
 import com.ToxicBakery.viewpager.transforms.StackTransformer;
-import com.ToxicBakery.viewpager.transforms.TabletTransformer;
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.adapters.MyViewPagerAdapter;
+import com.virtualspaces.cinch.fragments.FinanceEntryFragment;
 
 import java.util.ArrayList;
 

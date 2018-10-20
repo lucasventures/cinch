@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,6 +14,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.adapters.RecyclerViewAdapter;
 import com.virtualspaces.cinch.entities.MyTransaction;
 
 import java.util.ArrayList;
@@ -23,7 +25,7 @@ import java.util.List;
 public class TransactionListActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
 
     private FloatingActionButton fab;
-    static RecyclerView mRecyclerView;
+    public static RecyclerView mRecyclerView;
     private ArrayList<MyTransaction> list;
     private SwipeRefreshLayout swipeRefresh;
     private Handler mHandler;
@@ -82,7 +84,7 @@ public class TransactionListActivity extends AppCompatActivity implements SwipeR
         TransactionListActivity.setUpRecycler(mRecyclerView);
     }
 
-     static void setUpRecycler(RecyclerView recyclerView) {
+    public static void setUpRecycler(RecyclerView recyclerView) {
         ArrayList<MyTransaction> transactions = new ArrayList<>();
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(recyclerView.getContext());

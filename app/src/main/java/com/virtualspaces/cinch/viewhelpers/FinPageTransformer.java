@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.viewhelpers;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

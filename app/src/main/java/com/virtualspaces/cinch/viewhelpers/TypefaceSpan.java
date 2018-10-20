@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.viewhelpers;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -13,7 +13,7 @@ import android.util.LruCache;
  *
  * @author Tristan Waddington
  */
-class TypefaceSpan extends MetricAffectingSpan {
+public class TypefaceSpan extends MetricAffectingSpan {
     /** An <code>LruCache</code> for previously loaded typefaces. */
     private static LruCache<String, Typeface> sTypefaceCache =
             new LruCache<>(12);

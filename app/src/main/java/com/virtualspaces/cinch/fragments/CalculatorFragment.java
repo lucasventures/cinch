@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.fragments;
 
 
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.LinearInterpolator;
+
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.adapters.RecyclerViewAdapter;
 
 
 /**

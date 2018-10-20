@@ -1,11 +1,9 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.fragments;
 
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,6 +13,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.activities.FinancialCalibrationActivity;
+import com.virtualspaces.cinch.activities.SimpleStartActivity;
 
 
 /**

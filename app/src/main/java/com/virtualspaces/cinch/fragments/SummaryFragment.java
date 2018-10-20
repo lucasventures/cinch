@@ -1,11 +1,9 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.fragments;
 
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -17,6 +15,10 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.LinearInterpolator;
+
+import com.virtualspaces.cinch.R;
+import com.virtualspaces.cinch.activities.AddTransactionActivity;
+import com.virtualspaces.cinch.adapters.RecyclerViewAdapter;
 
 
 /**

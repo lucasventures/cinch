@@ -1,8 +1,10 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
+import com.virtualspaces.cinch.R;
 
 public class CalculateActivity extends AppCompatActivity {
 

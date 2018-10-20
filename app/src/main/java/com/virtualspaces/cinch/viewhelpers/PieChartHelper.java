@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.viewhelpers;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -17,6 +17,7 @@ import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.virtualspaces.cinch.R;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class PieChartHelper implements OnChartValueSelectedListener{
     //values are entered in order of
     private ArrayList<Double> mDataValues;
 
-    PieChartHelper(PieChart pieChart, Context context, String[] categoryNames, ArrayList<Double> dataValues){
+    public PieChartHelper(PieChart pieChart, Context context, String[] categoryNames, ArrayList<Double> dataValues) {
         mPieChart = pieChart;
         mContext = context;
         mCategories = categoryNames;

@@ -1,4 +1,4 @@
-package com.virtualspaces.cinch;
+package com.virtualspaces.cinch.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -22,7 +22,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.virtualspaces.cinch.R;
 import com.virtualspaces.cinch.entities.Note;
+import com.virtualspaces.cinch.viewhelpers.TypefaceSpan;
 
 /*
 this activity if for creating notepad objects
