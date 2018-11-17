@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    package="com.virtualspaces.cinch"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lucas.ventures.cinch">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
 
@@ -17,79 +17,81 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <meta-data android:name="DATABASE" android:value="cinch.db" />
-        <meta-data android:name="VERSION" android:value="4" />
-        <meta-data android:name="QUERY_LOG" android:value="true" />
-        <meta-data android:name="DOMAIN_PACKAGE_NAME"
+        <meta-data
+            android:name="DATABASE"
+            android:value="cinch.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="4" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
 
-            android:value="com.virtualspaces.cinch.entities" />
+            android:value="lucas.ventures.cinch.entities" />
 
         <activity
-            android:name="com.virtualspaces.cinch.activities.LoginActivity"
-            android:label="@string/app_name">
-        </activity>
+            android:name="lucas.ventures.cinch.activities.LoginActivity"
+            android:label="@string/app_name" />
         <activity
-            android:name="com.virtualspaces.cinch.activities.MainActivity"
+            android:name="lucas.ventures.cinch.activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.CalculateActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:name="lucas.ventures.cinch.activities.CalculateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.virtualspaces.cinch.activities.SecurityActivity"
+            android:name="lucas.ventures.cinch.activities.SecurityActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize|adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
-            android:name="com.virtualspaces.cinch.activities.NotepadActivity"
+            android:name="lucas.ventures.cinch.activities.NotepadActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.activities.MainActivity" />
+                android:value="lucas.ventures.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.ReviseBudgetActivity"
+            android:name="lucas.ventures.cinch.activities.ReviseBudgetActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.activities.MainActivity" />
+                android:value="lucas.ventures.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.IntroductionActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:name="lucas.ventures.cinch.activities.IntroductionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.virtualspaces.cinch.activities.TransactionListActivity"
+            android:name="lucas.ventures.cinch.activities.TransactionListActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.activities.MainActivity" />
+                android:value="lucas.ventures.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.AddTransactionActivity"
+            android:name="lucas.ventures.cinch.activities.AddTransactionActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.virtualspaces.cinch.activities.MainActivity" />
+                android:value="lucas.ventures.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.SimpleStartActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
+            android:name="lucas.ventures.cinch.activities.SimpleStartActivity"
+            android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name="com.virtualspaces.cinch.activities.SplashActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+            android:name="lucas.ventures.cinch.activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
