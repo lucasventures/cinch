@@ -299,13 +299,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                         //loop to extract all relevant saving values into saveProgress var
                         double saveProgress = 0.0;
-                        List<MyTransaction> transList = MyTransaction.listAll(MyTransaction.class);
-                        for (MyTransaction trans : transList) {
-                            if (trans.getCategory().equals("savings")) {
-                                Log.d("RecyclerAdapter", "savings transaction values: " + Double.parseDouble(trans.getValue()));
-                                saveProgress += Double.parseDouble(trans.getValue());
+                        try {
+                            List<MyTransaction> transList = MyTransaction.listAll(MyTransaction.class);
+                            for (MyTransaction trans : transList) {
+                                if (trans.getCategory().equals("savings")) {
+                                    Log.d("RecyclerAdapter", "savings transaction values: " + Double.parseDouble(trans.getValue()));
+                                    saveProgress += Double.parseDouble(trans.getValue());
+                                }
                             }
-                        }
+                        }catch(SQLiteException f){
+                            Log.e(TAG, "onBindViewHolder: ", f);
+                    }
 
                         //progress values, String and double instances
                         //set the progress values of the progress view
@@ -368,14 +372,21 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                         goals2.title.setText("Monthly Disposable Income");
 
                         //get fixed transaction entries to apply to budget
-
-                        List<MyTransaction> fixedTrans = MyTransaction.listAll(MyTransaction.class);
                         double transEntries = 0.0;
-                        for(MyTransaction trans : fixedTrans){
-                            if(trans.getCategory().equals("fixed")){
-                                transEntries += Double.parseDouble(trans.getValue());
+
+                        try {
+
+
+                            List<MyTransaction> fixedTrans = MyTransaction.listAll(MyTransaction.class);
+                            for (MyTransaction trans : fixedTrans) {
+                                if (trans.getCategory().equals("fixed")) {
+                                    transEntries += Double.parseDouble(trans.getValue());
+                                }
                             }
+                        }catch (SQLiteException e){
+                            Log.e(TAG, "onBindViewHolder: ", e);
                         }
+
 
                         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
                         double maxBudget = Double.parseDouble(pref.getString(Constants.BUDGET, "0.0"))-transEntries;
@@ -390,11 +401,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                         int year = pref.getInt("year",0);
 
                         double sumOfBudget = 0.0;
-                        List<MyTransaction> transBudget = SugarRecord.listAll(MyTransaction.class);
-                        for (MyTransaction t : transBudget) {
-                            if (!t.getCategory().equals("fixed")&&t.getMonth() == month &&t.getYear() == year) {
-                                sumOfBudget += Double.parseDouble(t.getValue());
+                        try {
+                            List<MyTransaction> transBudget = SugarRecord.listAll(MyTransaction.class);
+                            for (MyTransaction t : transBudget) {
+                                if (!t.getCategory().equals("fixed") && t.getMonth() == month && t.getYear() == year) {
+                                    sumOfBudget += Double.parseDouble(t.getValue());
+                                }
                             }
+                        }catch (SQLiteException e){
+                            Log.e(TAG, "onBindViewHolder: ", e);
                         }
 
                         Log.d("recycleradapter", "sum of budget values: " + sumOfBudget);

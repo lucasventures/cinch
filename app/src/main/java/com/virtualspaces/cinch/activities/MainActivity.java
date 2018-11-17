@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         //set date values
 
+        SugarContext.init(this);
 
         //main layout, this layout contains everything
         mainView = (CoordinatorLayout) findViewById(R.id.main_Layout);
@@ -117,7 +118,6 @@ public class MainActivity extends AppCompatActivity
             actionBar.setCustomView(view, params);
         }
         //init the db
-        SugarContext.init(this);
 
         //drawer code
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

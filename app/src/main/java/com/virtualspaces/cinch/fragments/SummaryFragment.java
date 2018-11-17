@@ -24,7 +24,7 @@ import com.virtualspaces.cinch.adapters.RecyclerViewAdapter;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener{
+public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     private int type;
     private FloatingActionButton fab;
@@ -63,13 +63,13 @@ public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),AddTransactionActivity.class);
-               // intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent = new Intent(getActivity(), AddTransactionActivity.class);
+                // intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
 
-        AlphaAnimation alpha = new AlphaAnimation(0f,1f);
+        AlphaAnimation alpha = new AlphaAnimation(0f, 1f);
         alpha.setInterpolator(new LinearInterpolator());
         alpha.setDuration(400);
         alpha.setFillAfter(true);
@@ -96,7 +96,7 @@ public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRe
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(0, getActivity());
         recyclerView.setAdapter(adapter);
 
-        AlphaAnimation alpha = new AlphaAnimation(0f,1f);
+        AlphaAnimation alpha = new AlphaAnimation(0f, 1f);
         alpha.setInterpolator(new LinearInterpolator());
         alpha.setDuration(400);
         alpha.setFillAfter(true);
@@ -108,7 +108,7 @@ public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRe
             public void run() {
                 mRefresh.setRefreshing(false);
             }
-        },2000);
+        }, 2000);
 
     }
 }
