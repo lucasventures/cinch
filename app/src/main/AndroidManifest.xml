@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.virtualspaces.cinch"
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.virtualspaces.cinch"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -14,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        >
+        tools:ignore="GoogleAppIndexingWarning">
 
         <meta-data android:name="DATABASE" android:value="cinch.db" />
         <meta-data android:name="VERSION" android:value="4" />
@@ -44,7 +45,6 @@
         </activity>
         <activity
             android:name="com.virtualspaces.cinch.activities.NotepadActivity"
-            android:theme="@style/AppWhite"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -59,7 +59,7 @@
                 android:value="com.virtualspaces.cinch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.virtualspaces.cinch.activities.FinancialCalibrationActivity"
+            android:name="com.virtualspaces.cinch.activities.IntroductionActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
@@ -79,7 +79,6 @@
         </activity>
         <activity
             android:name="com.virtualspaces.cinch.activities.SimpleStartActivity"
-            android:theme="@style/AppTheme.NoActionBar.Light"
             android:windowSoftInputMode="adjustResize">
         </activity>
 

@@ -8,20 +8,11 @@
     android:background="@drawable/intro_five">
 
 
-    <ScrollView
-        android:id="@+id/login_form"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="false"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/next"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="20dp">
-
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:layout_gravity="center"
             android:orientation="vertical"
             android:focusableInTouchMode="true"
@@ -118,7 +109,6 @@
 
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
-    </ScrollView>
 
     <Button
         android:id="@+id/next"

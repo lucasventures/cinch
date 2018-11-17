@@ -5,7 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.ToxicBakery.viewpager.transforms.StackTransformer;
+import com.ToxicBakery.viewpager.transforms.DepthPageTransformer;
 import com.virtualspaces.cinch.R;
 import com.virtualspaces.cinch.adapters.MyViewPagerAdapter;
 import com.virtualspaces.cinch.fragments.FinanceEntryFragment;
@@ -13,7 +13,7 @@ import com.virtualspaces.cinch.fragments.FinanceEntryFragment;
 import java.util.ArrayList;
 
 
-public class FinancialCalibrationActivity extends AppCompatActivity {
+public class IntroductionActivity extends AppCompatActivity {
     public static final String STRINGKEY = "titles";
 
     private ViewPager pager;
@@ -42,20 +42,18 @@ public class FinancialCalibrationActivity extends AppCompatActivity {
         fragments.add(manageFrag);
         fragments.add(budgetFrag);
         fragments.add(saveFrag);
-        //fragments.add(startFrag);
 
         //pager dots
-        one = (ImageView) findViewById(R.id.dot_one);
-        two = (ImageView) findViewById(R.id.dot_two);
-        three = (ImageView) findViewById(R.id.dot_three);
-        four = (ImageView) findViewById(R.id.dot_four);
-        //five = (ImageView) findViewById(R.id.dot_five);
+        one = findViewById(R.id.dot_one);
+        two = findViewById(R.id.dot_two);
+        three = findViewById(R.id.dot_three);
+        four = findViewById(R.id.dot_four);
 
         //setup pager
         pager = (ViewPager) findViewById(R.id.finPager);
         MyViewPagerAdapter adapter = new MyViewPagerAdapter(getSupportFragmentManager(), fragments);
         pager.setAdapter(adapter);
-        pager.setPageTransformer(true, new StackTransformer());
+        pager.setPageTransformer(true, new DepthPageTransformer());
 
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -82,7 +80,6 @@ public class FinancialCalibrationActivity extends AppCompatActivity {
                     case 3:
                         three.setImageResource(R.drawable.pager_circle_not_sel);
                         four.setImageResource(R.drawable.pager_circle_sel);
-                        //five.setImageResource(R.drawable.pager_circle_not_sel);
                         break;
                     case 4:
                         //four.setImageResource(R.drawable.pager_circle_not_sel);
