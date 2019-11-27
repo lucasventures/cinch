@@ -21,15 +21,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.ventures.cinch.R;
-import com.ventures.cinch.entities.Note;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.activities.NotepadActivity;
 import lucas.ventures.cinch.adapters.RecyclerViewAdapter;
+import lucas.ventures.cinch.entities.Note;
 
 
 /**

@@ -3,7 +3,7 @@ package lucas.ventures.cinch.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.ventures.cinch.R;
+import lucas.ventures.cinch.R;
 
 public class ReviseSavingsActivity extends AppCompatActivity {
 

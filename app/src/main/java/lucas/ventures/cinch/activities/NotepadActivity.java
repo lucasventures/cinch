@@ -22,9 +22,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.ventures.cinch.R;
-import com.ventures.cinch.entities.Note;
-
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.entities.Note;
 import lucas.ventures.cinch.viewhelpers.TypefaceSpan;
 
 /*

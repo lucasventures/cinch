@@ -14,13 +14,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.ventures.cinch.R;
-import com.ventures.cinch.adapters.RecyclerViewAdapter;
-import com.ventures.cinch.entities.MyTransaction;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.adapters.RecyclerViewAdapter;
+import lucas.ventures.cinch.entities.MyTransaction;
 
 public class TransactionListActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
 

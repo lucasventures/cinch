@@ -26,13 +26,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orm.SugarRecord;
-import com.ventures.cinch.R;
-import com.ventures.cinch.entities.MyTransaction;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lucas.ventures.cinch.Constants;
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.entities.MyTransaction;
 import lucas.ventures.cinch.viewhelpers.TypefaceSpan;
 
 public class AddTransactionActivity extends AppCompatActivity implements View.OnClickListener {

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:theme="@style/AppTheme.NoActionBar"
-    tools:context=".activities.FinancialCalibrationActivity">
+    app:theme="@style/AppTheme"
+    tools:context=".activities.IntroductionActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/finPager"
@@ -15,42 +14,43 @@
     </android.support.v4.view.ViewPager>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_marginBottom="36dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/dot_one"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:id="@+id/dot_one"
-            android:layout_weight="1"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/pager_circle_sel" />
 
         <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
             android:id="@+id/dot_two"
-            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/pager_circle_not_sel" />
 
         <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
             android:id="@+id/dot_three"
-            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/pager_circle_not_sel" />
 
         <ImageView
+            android:id="@+id/dot_four"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:id="@+id/dot_four"
-            android:layout_weight="1"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/pager_circle_not_sel" />
 
     </LinearLayout>

@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.ventures.cinch.R;
+import lucas.ventures.cinch.R;
 
 public class CalculateActivity extends AppCompatActivity {
 

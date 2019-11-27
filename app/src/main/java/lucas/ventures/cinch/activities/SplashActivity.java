@@ -12,9 +12,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
 
-import com.ventures.cinch.R;
-
 import lucas.ventures.cinch.Constants;
+import lucas.ventures.cinch.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -54,7 +53,7 @@ public class SplashActivity extends AppCompatActivity {
                                             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(SplashActivity.this);
 
                                             if (prefs.getInt(Constants.PIN, 0) == 0) {
-                                                Intent intent = new Intent(SplashActivity.this, FinancialCalibrationActivity.class);
+                                                Intent intent = new Intent(SplashActivity.this, IntroductionActivity.class);
                                                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                                 startActivity(intent);
                                                 finish();

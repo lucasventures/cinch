@@ -5,9 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.util.Log;
 
-import com.ventures.cinch.fragments.FinanceEntryFragment;
-
 import java.util.ArrayList;
+
+import lucas.ventures.cinch.fragments.FinanceEntryFragment;
 
 /**
  * Created by LUCASVENTURES on 6/3/2016.

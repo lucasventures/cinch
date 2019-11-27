@@ -28,19 +28,19 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.orm.SugarRecord;
-import com.ventures.cinch.R;
-import com.ventures.cinch.entities.MyTransaction;
-import com.ventures.cinch.entities.Note;
-import com.ventures.cinch.fragments.NotepadFragment;
-import com.ventures.cinch.viewhelpers.PieChartHelper;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lucas.ventures.cinch.Constants;
+import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.activities.AddTransactionActivity;
 import lucas.ventures.cinch.activities.NotepadActivity;
 import lucas.ventures.cinch.activities.TransactionListActivity;
+import lucas.ventures.cinch.entities.MyTransaction;
+import lucas.ventures.cinch.entities.Note;
+import lucas.ventures.cinch.fragments.NotepadFragment;
+import lucas.ventures.cinch.viewhelpers.PieChartHelper;
 
 /**
  * Created by LUCASVENTURES on 5/22/2016.
@@ -98,6 +98,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         switch (listType) {
 
             case 0:
+                //summary list
+                //edit here to change card order
                 switch (viewType) {
                     case 0://text
                         currentHolder = 0;

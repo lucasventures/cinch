@@ -4,9 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.ventures.cinch.fragments.SummaryFragment;
-
 import lucas.ventures.cinch.fragments.NotepadFragment;
+import lucas.ventures.cinch.fragments.SummaryFragment;
 
 /**
  * Created by LUCASVENTURES on 5/21/2016.

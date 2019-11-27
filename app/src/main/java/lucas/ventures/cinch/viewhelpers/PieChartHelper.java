@@ -17,9 +17,10 @@ import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.ventures.cinch.R;
 
 import java.util.ArrayList;
+
+import lucas.ventures.cinch.R;
 
 /**
  * Created by LUCASVENTURES on 5/26/2016.

@@ -16,8 +16,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.LinearInterpolator;
 
-import com.ventures.cinch.R;
-
+import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.activities.AddTransactionActivity;
 import lucas.ventures.cinch.adapters.RecyclerViewAdapter;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ventures.cinch.activities.AddTransactionActivity">
+    tools:context="lucas.ventures.cinch.activities.AddTransactionActivity">
 
 
     <android.support.v7.widget.Toolbar
@@ -61,7 +61,6 @@
                     android:layout_below="@+id/textView"
                     android:spinnerMode="dropdown"
                     android:textAlignment="center"
-                    android:theme="@style/Text.Light"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"

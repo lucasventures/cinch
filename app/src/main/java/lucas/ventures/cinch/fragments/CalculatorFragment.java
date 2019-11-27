@@ -12,6 +12,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.LinearInterpolator;
 
+import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.adapters.RecyclerViewAdapter;
 
 
@@ -30,8 +31,8 @@ public class CalculatorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(lucas.ventures.cinch.R.layout.fragment_calculator, container, false);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(lucas.ventures.cinch.R.id.calc_recyclerview);
+        View view = inflater.inflate(R.layout.fragment_calculator, container, false);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.calc_recyclerview);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);

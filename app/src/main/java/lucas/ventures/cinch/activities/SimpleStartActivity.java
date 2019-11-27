@@ -15,9 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ventures.cinch.R;
-
 import lucas.ventures.cinch.Constants;
+import lucas.ventures.cinch.R;
 
 public class SimpleStartActivity extends AppCompatActivity implements View.OnClickListener {
 

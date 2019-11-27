@@ -28,10 +28,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.ventures.cinch.R;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import lucas.ventures.cinch.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

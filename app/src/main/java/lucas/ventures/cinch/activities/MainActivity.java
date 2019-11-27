@@ -32,12 +32,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.orm.SugarContext;
-import com.ventures.cinch.R;
 
 import java.util.Calendar;
 import java.util.Map;
 
 import lucas.ventures.cinch.Constants;
+import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.adapters.MyPagerAdapter;
 import lucas.ventures.cinch.viewhelpers.MainPageTransformer;
 import lucas.ventures.cinch.viewhelpers.TypefaceSpan;

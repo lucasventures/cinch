@@ -14,10 +14,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.ventures.cinch.R;
-import com.ventures.cinch.activities.SimpleStartActivity;
-
-import lucas.ventures.cinch.activities.FinancialCalibrationActivity;
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.activities.IntroductionActivity;
+import lucas.ventures.cinch.activities.SimpleStartActivity;
 
 
 /**
@@ -49,7 +48,7 @@ public class FinanceEntryFragment extends Fragment {
         startbutton = (Button) view.findViewById(R.id.start_btn);
 
         background = (RelativeLayout) view.findViewById(R.id.beach);
-        int title = args.getInt(FinancialCalibrationActivity.STRINGKEY);
+        int title = args.getInt(IntroductionActivity.STRINGKEY);
         initializeFragment(title, textView);
         return view;
     }
@@ -58,16 +57,19 @@ public class FinanceEntryFragment extends Fragment {
         switch (title) {
             case 0:
                 name.setText("Easily manage your cash.");
+                startbutton.setVisibility(View.GONE);
                 centerImage.setImageDrawable(getResources().getDrawable(R.drawable.cashy));
                 background.setBackground(getResources().getDrawable(R.drawable.intro_two));
                 break;
             case 1:
                 name.setText("Create a simple budget.");
+                startbutton.setVisibility(View.GONE);
                 centerImage.setImageDrawable(getResources().getDrawable(R.drawable.simplebudget));
                 background.setBackground(getResources().getDrawable(R.drawable.intro_three));
                 break;
             case 2:
                 name.setText("Start saving some coin.");
+                startbutton.setVisibility(View.GONE);
                 centerImage.setImageDrawable(getResources().getDrawable(R.drawable.coinage));
                 background.setBackground(getResources().getDrawable(R.drawable.intro_four));
                 break;
@@ -75,15 +77,13 @@ public class FinanceEntryFragment extends Fragment {
                 name.setText("cinch");
                 name.setTextSize(40f);
                 centerImage.setImageDrawable(getResources().getDrawable(R.drawable.cinch));
-                centerImage.setPadding(0,0,0,0);
+                centerImage.setPadding(0, 0, 0, 0);
 
-                //background.setBackground(getResources().getDrawable(R.drawable.ic_launcher));
                 startbutton.setVisibility(View.VISIBLE);
                 startbutton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(getActivity(), SimpleStartActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
                 });
