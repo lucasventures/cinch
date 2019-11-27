@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.ToxicBakery.viewpager.transforms.StackTransformer;
-import com.ventures.cinch.R;
-import com.ventures.cinch.adapters.MyViewPagerAdapter;
-import com.ventures.cinch.fragments.FinanceEntryFragment;
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.adapters.MyViewPagerAdapter;
+import lucas.ventures.cinch.fragments.FinanceEntryFragment;
 
 import java.util.ArrayList;
 
