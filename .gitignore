@@ -2182,3 +2182,5 @@ app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/su
 app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R.class
 app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$layout.class
 >>>>>>> 80caaee94ea34c736a97f8a823e9ff81f6cae8a1
+/.idea/
+/.gradle/

@@ -7,7 +7,7 @@
     android:id="@+id/main_card"
     tools:context=".activities.TransactionListActivity">
 
-   <android.support.v4.widget.SwipeRefreshLayout
+   <androidx.core.widget.SwipeRefreshLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:id="@+id/trans_swipe">
@@ -16,7 +16,7 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent">
       </android.support.v7.widget.RecyclerView>
-   </android.support.v4.widget.SwipeRefreshLayout>
+   </androidx.core.widget.SwipeRefreshLayout>
 
    <android.support.design.widget.FloatingActionButton
        android:id="@+id/trans_fab"

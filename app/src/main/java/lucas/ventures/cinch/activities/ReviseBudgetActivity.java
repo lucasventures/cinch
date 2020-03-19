@@ -5,13 +5,14 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.PieChart;
 
@@ -23,7 +24,7 @@ import lucas.ventures.cinch.R;
 import lucas.ventures.cinch.entities.MonthlyFinances;
 import lucas.ventures.cinch.viewhelpers.PieChartHelper;
 
-public class ReviseBudgetActivity extends AppCompatActivity{
+public class ReviseBudgetActivity extends AppCompatActivity {
 
     /*current values
 

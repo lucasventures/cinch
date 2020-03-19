@@ -1,16 +1,19 @@
 package lucas.ventures.cinch.activities;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.ToxicBakery.viewpager.transforms.StackTransformer;
-import com.ventures.cinch.R;
-import com.ventures.cinch.adapters.MyViewPagerAdapter;
-import com.ventures.cinch.fragments.FinanceEntryFragment;
 
 import java.util.ArrayList;
+
+import lucas.ventures.cinch.R;
+import lucas.ventures.cinch.adapters.MyViewPagerAdapter;
+import lucas.ventures.cinch.fragments.FinanceEntryFragment;
 
 
 public class FinancialCalibrationActivity extends AppCompatActivity {

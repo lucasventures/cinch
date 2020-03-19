@@ -1,7 +1,8 @@
 package lucas.ventures.cinch.viewhelpers;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by LUCASVENTURES on 5/21/2016.
