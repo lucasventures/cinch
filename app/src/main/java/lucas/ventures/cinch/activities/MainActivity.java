@@ -3,7 +3,6 @@ package lucas.ventures.cinch.activities;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,7 +10,6 @@ import android.preference.PreferenceManager;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.format.Time;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,11 +29,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.tabs.TabLayout;
 import com.orm.SugarContext;
 
 import java.util.Calendar;
-import java.util.Map;
 
 import lucas.ventures.cinch.Constants;
 import lucas.ventures.cinch.R;
@@ -70,10 +66,6 @@ public class MainActivity extends AppCompatActivity
         pager.setPageTransformer(false, new MainPageTransformer());
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
-        //tabs setup
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-        tabLayout.setupWithViewPager(pager);
-
         //toolbar setup
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -104,7 +96,6 @@ public class MainActivity extends AppCompatActivity
                             title.setText(s);
                         }
                     }, 2000);
-
                 }
             });
             ActionBar.LayoutParams params = new ActionBar.LayoutParams(//Center the textview in the ActionBar !
@@ -145,38 +136,36 @@ public class MainActivity extends AppCompatActivity
 
         toggle.syncState();
 
-        NavigationView nav = (NavigationView) findViewById(R.id.nav_view);
-        View header = nav.getHeaderView(0);
-        TextView username = (TextView) header.findViewById(R.id.username);
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        username.setText(preferences.getString(Constants.NAME, null));
-        username.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/spartan.ttf"));
-        nav.setNavigationItemSelectedListener(this);
-
-
-        reset = (ImageView) header.findViewById(R.id.reset_date_btn);
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Time time = new Time();
-                time.setToNow();
-                setCurrentDateVals();
-                setDate.setText(monthFromInt(time.month) + " " + time.monthDay + ", " + time.year);
-
-            }
-        });
-        Time time = new Time();
-        time.setToNow();
-        setDate = (Button) header.findViewById(R.id.time_setter);
-        //final Calendar now = Calendar.getInstance();
-
-
-        setDate.setText(monthFromInt(time.month) + " " + time.monthDay + ", " + time.year);
-
-        Map<String, ?> s = preferences.getAll();
-        for (int i = 0; i < s.size(); i++) {
-            Log.d("MainActivity", "onCreate: prefs: " + s.get(i));
-        }
+//        NavigationView nav = (NavigationView) findViewById(R.id.nav_view);
+//        View header = nav.getHeaderView(0);
+//        TextView username = (TextView) header.findViewById(R.id.username);
+//        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        username.setText(preferences.getString(Constants.NAME, null));
+//        username.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/spartan.ttf"));
+//        nav.setNavigationItemSelectedListener(this);
+//
+//        reset = (ImageView) header.findViewById(R.id.reset_date_btn);
+//        reset.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Time time = new Time();
+//                time.setToNow();
+//                setCurrentDateVals();
+//                setDate.setText(monthFromInt(time.month) + " " + time.monthDay + ", " + time.year);
+//
+//            }
+//        });
+//        Time time = new Time();
+//        time.setToNow();
+//        setDate = (Button) header.findViewById(R.id.time_setter);
+//        //final Calendar now = Calendar.getInstance();
+//
+//        setDate.setText(monthFromInt(time.month) + " " + time.monthDay + ", " + time.year);
+//
+//        Map<String, ?> s = preferences.getAll();
+//        for (int i = 0; i < s.size(); i++) {
+//            Log.d("MainActivity", "onCreate: prefs: " + s.get(i));
+//        }
     }
 
 
